@@ -49,30 +49,46 @@ img { /* images are responsive to the browser, so the width will always be 100% 
     display: block;
 }
 
-body { margin: 0; padding: 0; } 
+body { margin: 0; 
+    padding: 0; } 
 
-.masthead { background-color: maroon; overflow: hidden;} 
+.masthead { background-color: maroon; 
+    overflow: hidden;} 
 
-.logo { height: 4.5rem; width:auto ; margin: .5rem 5%; /*float: right;} */
+.logo { height: 4.5rem; 
+    width:auto ; 
+    margin: .5rem 5%;} /*float: right;} */
    /* display: block; margin: .5rem auto; */}
 
-article { margin: 0; padding: 0 5% /* top and bottom 0, left and right 5% */; overflow:hidden /*forces parent to wrap around its child*/}
+article { margin: 0;
+    padding: 0 5% /* top and bottom 0, left and right 5% */; 
+    overflow:hidden /*forces parent to wrap around its child*/
+}
 
-h1 { margin: 1.5rem 0; font-size: 5rem; line-height: 4.5rem; }
+h1 { margin: 1.5rem 0;
+    font-size: 5rem;
+    line-height: 4.5rem; }
 
-h1 + p  { font-size: 1.25rem; font-weight: bold; }
+h1 + p  { font-size: 1.25rem;
+    font-weight: bold; }
 
-p { line-height: 1.5rem; margin: 0 0 1.5 }
+p { line-height: 1.5rem;
+    margin: 0 0 1.5 }
 
-figure { margin: 0 auto 1.5rem /*auto,makes the sides move automatically, in case we want smaller */; width: 80%; /* size can be smaller, but not larger then 100% */}
+figure { margin: 0 auto 1.5rem /*auto,makes the sides move automatically, in case we want smaller */; width: 80%; /* size can be smaller, but not larger then 100% */
+}
 
 
-figcaption { margin: .5rem 0 0; font-size: .75rem;} 
+figcaption { margin: .5rem 0 0;
+    font-size: .75rem;} 
 
-footer { background-color: brown; overflow:hidden; } 
+footer { background-color: brown;
+    overflow:hidden; } 
 
 /* targeting just the paragraph in a footer, we put */ 
-footer p { margin: .5rem 5% 5rem; color: white; font-size: .75rem; } 
+footer p { margin: .5rem 5% 5rem;
+    color: white;
+    font-size: .75rem; } 
 footer a { color: white; } 
 
 
