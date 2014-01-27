@@ -40,9 +40,42 @@ html {
     
 /* Controls the default font size */ 
     font-size: 100%; /*100% = 16px + 1rem */ 
+    font-family: Georgia, Times, serif;} 
+
 }
 
 img { /* images are responsive to the browser, so the width will always be 100% of the browser */ 
 	width: 100%;
     display: block;
 }
+
+body { margin: 0; padding: 0; } 
+
+.masthead { background-color : maroon; } 
+.logo { height: 4.5rem; width:auto ; margin: .5rem 5%; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
