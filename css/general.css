@@ -1,27 +1,48 @@
 @charset "utf-8";
 
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
+/*  Shorthand: 
+margin: 40px; all 4 sides
+mergin: 40px auto; top/bottom right/left
+margin: 40px auto 0: top right/left bottom
+margin: 40ppxp 30px 5px 10px: top right bottpom left
 
-* {
-	-moz-box-sizing: border-box;
+Start at the top, then continue clockwise arounf the box 
+
+Units of Measurement
+width = %
+height = rem
+type = rem
+Graphics = px (e.g. "border" would be considered a graphic) 
+
+Reminder: the child determines the height of the parent element. */ 
+
+/* Control the size of the viewport */ 
+
+@-moz-viewport { width: device-width; scale: 1; } /* Firefox */ 
+@-ms-viewport { width: device-width; scale: 1; } /*Microsoft*/ 
+@-o-viewport { width: device-width; scale: 1; } /*Opera*/
+@-webkit-viewport { width: device-width; scale: 1; } /*Safari & Chrome*/ 
+@viewport { width: device-width; scale: 1; } /*W3C Standard */ 
+
+/* Adjust the padding so it draws on the box interior */
+
+* {-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
+	box-sizing: border-box;}
 
+
+/* Controls the zoom on mobile */ 
 html {
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
     
-    font-size: 100%;
+/* Controls the default font size */ 
+    font-size: 100%; /*100% = 16px + 1rem */ 
 }
 
-img {
+img { /* images are responsive to the browser, so the width will always be 100% of the browser */ 
 	width: 100%;
     display: block;
 }
