@@ -51,11 +51,12 @@ img { /* images are responsive to the browser, so the width will always be 100% 
 
 body { margin: 0; padding: 0; } 
 
-.masthead { background-color : maroon; } 
-.logo { height: 4.5rem; width:auto ; margin: .5rem 5%; } 
+.masthead { background-color : maroon; overflow: hidden;} 
 
+.logo { height: 4.5rem; width:auto ; margin: .5rem 5%; /*float: right;} */
+   /* display: block; margin: .5rem auto; */}
 
-
+article { margin: 0; padding: 0 5% /* top and bottom 0, left and right 5% */; overflow:hidden /*forces parent to wrap around its child*/
 
 
 
