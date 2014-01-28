@@ -53,8 +53,8 @@ img { /* images are responsive to the browser, so the width will always be 100% 
     display: block;}
 
 body { 
-    margin: 2; 
-    padding: 2; } 
+    margin: 0; 
+    padding: 0; } 
 
 .masthead {
     background-color: maroon; 
