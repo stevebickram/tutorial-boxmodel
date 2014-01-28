@@ -3,12 +3,13 @@
 /*  Shorthand: 
 margin: 40px; all 4 sides
 mergin: 40px auto; top/bottom right/left
-margin: 40px auto 0: top right/left bottom
-margin: 40ppxp 30px 5px 10px: top right bottpom left
+margin: 40px auto 0; top right/left bottom
+margin: 40ppxp 30px 5px 10px; top right bottpom left
 
 Start at the top, then continue clockwise arounf the box 
 
 Units of Measurement
+
 width = %
 height = rem
 type = rem
@@ -19,10 +20,10 @@ Reminder: the child determines the height of the parent element. */
 /* Control the size of the viewport */ 
 
 @-moz-viewport { width: device-width; scale: 1; } /* Firefox */ 
-@-ms-viewport { width: device-width; scale: 1; } /*Microsoft*/ 
-@-o-viewport { width: device-width; scale: 1; } /*Opera*/
-@-webkit-viewport { width: device-width; scale: 1; } /*Safari & Chrome*/ 
-@viewport { width: device-width; scale: 1; } /*W3C Standard */ 
+@-ms-viewport { width: device-width; scale: 1; } /* Microsoft */ 
+@-o-viewport { width: device-width; scale: 1; } /* Opera */
+@-webkit-viewport { width: device-width; scale: 1; } /* Safari & Chrome */ 
+@viewport { width: device-width; scale: 1; } /* W3C Standard */ 
 
 /* Adjust the padding so it draws on the box interior */
 
@@ -32,6 +33,7 @@ Reminder: the child determines the height of the parent element. */
 
 
 /* Controls the zoom on mobile */ 
+
 html {
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -39,30 +41,38 @@ html {
 	text-size-adjust: 100%;
     
 /* Controls the default font size */ 
+    
     font-size: 100%; /*100% = 16px + 1rem */ 
+    
     font-family: Georgia, Times, serif;} 
 
-}
+
 
 img { /* images are responsive to the browser, so the width will always be 100% of the browser */ 
 	width: 100%;
-    display: block;
-}
+    display: block;}
 
-body { margin: 0; 
+body { 
+    margin: 0; 
     padding: 0; } 
 
-.masthead { background-color: maroon; 
+.masthead {
+    background-color: maroon; 
     overflow: hidden;} 
 
-.logo { height: 4.5rem; 
+.logo { 
+    height: 4.5rem; 
     width:auto ; 
-    margin: .5rem 5%;} /*float: right;} */
-   /* display: block; margin: .5rem auto; */}
+    margin: .5rem 5%; 
 
-article { margin: 0;
-    padding: 0 5% /* top and bottom 0, left and right 5% */; 
-    overflow:hidden /*forces parent to wrap around its child*/
+/* float:right; */
+/* display: block; margin: .5rem auto; */
+}
+
+article {
+    margin: 0;
+    padding: 0 5%;
+    overflow: hidden;
 }
 
 h1 { margin: 1.5rem 0;
@@ -75,7 +85,9 @@ h1 + p  { font-size: 1.25rem;
 p { line-height: 1.5rem;
     margin: 0 0 1.5 }
 
-figure { margin: 0 auto 1.5rem /*auto,makes the sides move automatically, in case we want smaller */; width: 80%; /* size can be smaller, but not larger then 100% */
+figure { 
+    margin: 0 auto 1.5rem /*auto,makes the sides move automatically, in case we want smaller */; 
+    width: 80%; /* size can be smaller, but not larger then 100% */
 }
 
 
